@@ -24,7 +24,7 @@ The aim of the Pinappple Technique is to use time as a valuable ally in accompli
 
 Project is online. Check it 🍍 Pineapple Timer, it's online
 
-* [Pineapple Timer](https://koyocreative.com/projects/pineapple) - 🍍  Check it
+* [Pineapple Timer](http://www.koyocreative.com/projects/pineapple/) - 🍍  Check it
 
 
 
