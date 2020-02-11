@@ -4,23 +4,28 @@ The Pinappple Technique is a time management method that can be used for any tas
 
 The aim of the Pinappple Technique is to use time as a valuable ally in accomplishing what we want to do in the way we want to do it, and to enable us to improve continually the way we work or study.
 
+
+
 #  🍍 Break Sessions 🍍 
 
   -  🍍 5min
   -  🍍 15min
+  
+  
 
-# Work Sessions
+# 🍍 Work Sessions 🍍
 
   -  🍍 25min
   -  🍍 45min
+  
+  
 
-### Project is Live
+### 🍍 Project is Live
 
 Project is online. Check it 🍍 Pineapple Timer, it's online
 
 * [Pineapple Timer](https://koyocreative.com/projects/pineapple) - 🍍  Check it
 
+
+
  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  🍍  
-
-
-
