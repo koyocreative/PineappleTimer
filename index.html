@@ -9,20 +9,24 @@
     <div class="pineapple-wrap">
 
         <div class="pineapple_ctrl">
-            <button data-time="300" class="pineapple_btn"> 5min 🍍 Break</button>
-            <button data-time="900" class="pineapple_btn"> 15min 🍍 Break</button>
-            <button data-time="1500" class="pineapple_btn"> 25min 🍍 Session</button>
-            <button data-time="27135" class="pineapple_btn"> 45min 🍍 Session</button>
-            <!-- <button data-time="0" class="pineapple_btn"> 🍍 STOP 🍍 </button> -->
+            <button data-time="300" class="pineapple_btn"> 5min <img src="pineapple.svg"> Break</button>
+            <button data-time="900" class="pineapple_btn"> 15min <img src="pineapple.svg"> Break</button>
+            <button data-time="1500" class="pineapple_btn"> 25min <img src="pineapple.svg"> Session</button>
+            <button data-time="2700" class="pineapple_btn"> 45min <img src="pineapple.svg"> Session</button>
         </div>
 
         <div class="display">
             <div id="pineapple">
-                🍍
+                <img src="pineapple.svg">
             </div>
 
             <h1 class="display__time-left">00:00</h1>
             <p class="display__end-time">Pineapple Timer</p>
+
+            <div class="btn_ctrl">
+                <div class="btn_hero" onClick="stopTimer()">Stop</div>
+                <div class="btn_hero" onClick="pauseTimer()">Pause</div>
+            </div>
         </div>
 
     </div>

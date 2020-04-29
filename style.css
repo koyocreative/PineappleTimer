@@ -18,7 +18,11 @@ body {
 #pineapple {
     font-size: 10rem;
     margin-top: 50px;
-    transform: rotate(45deg);
+    /*transform: rotate(45deg);*/
+}
+#pineapple img {
+        margin-top: 50px;
+    height: 300px;
 }
 #pineapple:hover {
     cursor: default !important;
@@ -37,6 +41,20 @@ body {
 .pineapple_ctrl * {
     flex: 1;
 }
+
+@media (max-width: 1050px) {
+    .pineapple_ctrl * {
+        width: 100%;
+        flex: 2;
+    }
+    .pineapple_btn img {
+        height: 70px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
 /* BUTTONS */
 .pineapple_btn {
     background: none;
@@ -49,9 +67,11 @@ body {
     border-bottom: 3px solid rgba(0,0,0,0.2);
     border-right: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
-    height: 70px;
+    min-height: 70px;
 }
-
+.pineapple_btn img {
+    height: 25px;
+}
 .display {
     flex: 1;
     display: flex;
@@ -65,5 +85,25 @@ body {
 }
 
 .footer {
-    margin-top: 200px;
+    margin-top: 80px;
+}
+
+.btn-ctrl {
+    display: inline-block;
+}
+.btn_hero {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 15px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    min-height: 70px;
 }

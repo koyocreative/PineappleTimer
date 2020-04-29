@@ -1,4 +1,6 @@
 let countdown;
+let pause = false;
+// dom 
 const timerDisplay = document.querySelector('.display__time-left')
 const endTime = document.querySelector('.display__end-time')
 const buttons = document.querySelectorAll('[data-time]')
@@ -16,19 +18,22 @@ function timer(seconds) {
     displayEndTime(past)
 
     countdown = setInterval( () => {
-        const secLeft = Math.round((past - Date.now()) / 1000)
+        // if it's paused, don't run
+        if(!pause) {
+            const secLeft = Math.round((past - Date.now()) / 1000)
+            console.log(secLeft)
 
-        // check if we should stop it
-        if( secLeft < 0 ) {
-            audio.play();
-            clearInterval(countdown);
-            return;
+            // check if we should stop it
+            if( secLeft < 0 ) {
+                audio.play();
+                clearInterval(countdown);
+                return;
+            }
+            displayTimeLeft(secLeft)
+
         }
-        displayTimeLeft(secLeft)
     }, 1000 )
-
 }
-
 
 function displayTimeLeft(seconds) {
     const min = Math.floor(seconds / 60)
@@ -52,6 +57,15 @@ function displayEndTime(timestamp) {
 function startTimer() {
     const sec = parseInt(this.dataset.time)
     timer(sec)
+}
+
+function stopTimer() {
+    timer(0)
+    endTime.innerHTML = 'Timer is Stoped!'
+}
+
+function pauseTimer() {
+    pause = pause ? false : true;
 }
 
 // Add event listener on buttons
